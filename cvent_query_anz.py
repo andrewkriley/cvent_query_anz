@@ -1,5 +1,4 @@
 #!/usr/bin/env python2
-#  -*- coding: utf-8 -*-
 
 __author__ = "Andrew Riley"
 __author_email__ = "andreril@cisco.com"
@@ -9,7 +8,6 @@ __license__ = "MIT"
 
 import urllib2
 import json
-import urlparse
 import sys
 
 if sys.argv[1:]:
@@ -67,7 +65,7 @@ d = {}
 
 for i in data4:
     #get event title
-    #data = unicode(i).encode('utf8')
+    #data = unicode(i).encode('utf8') #used with previous html from selenium
     data = i
     title = data.split('\"Text\":\"')[1].split('\"},')[0]
     title2 = title.split('\"}')[0]
