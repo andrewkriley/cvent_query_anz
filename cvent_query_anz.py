@@ -10,9 +10,6 @@ __license__ = "MIT"
 import urllib2
 import json
 import urlparse
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import Select
 import sys
 
 if sys.argv[1:]:
